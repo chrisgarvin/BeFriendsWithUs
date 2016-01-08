@@ -34,8 +34,38 @@ html {
   align-items: center;
 }
 .content {
-  white-space:pre;
-  width: 50%;
-  // text-align: center;
+  width: 60%;
+  text-align: center;
   margin: 0 auto;
+  height: 500px;
+  border: solid #01a5ff 10px;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  // -webkit-text-align: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // text-align: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.charles, .chris {
+  width: 50%;
+}
+
+.chris img, .charles img {
+  width: 75%;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+img#headshot:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }

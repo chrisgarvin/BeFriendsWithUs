@@ -1,7 +1,9 @@
 {
 	"response": {
-		"jobs":
+		"info":
 			[
+				{"name": "Chris 'Chip' Garvin", "job": "Engineering Team Builder / Chain", "company": "chain", "twitter": "@chris_garvin"},
+				{"name": "Charles 'Chip' Riccardi", "job": "Head of Design / eatsa", "company": "eatsa", "twitter": "@charlesriccardi"}
 ]
 	}
 }

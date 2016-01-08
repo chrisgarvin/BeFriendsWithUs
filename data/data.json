@@ -2,8 +2,8 @@
 	"response": {
 		"info":
 			[
-				{"name": "Chris 'Chip' Garvin", "job": "Engineering Team Builder / Chain", "company": "chain", "twitter": "@chris_garvin"},
-				{"name": "Charles 'Chip' Riccardi", "job": "Head of Design / eatsa", "company": "eatsa", "twitter": "@charlesriccardi"}
+				{"name": "Chris 'Chip' Garvin", "job": "Engineering Team Builder / Chain", "company": "chain", "instagram": "http://www.instagram.com/chrisgarvin", "twitter": "http://www.twitter.com/chris_garvin", "email": "mailto:chris.garvin@me.com"},
+				{"name": "Charles 'Chip' Riccardi", "job": "Head of Design / eatsa", "company": "eatsa", "instagram": "http://www.instagram.com/charlesriccardi", "twitter": "http://www.twitter.com/charlesriccardi", "email": "mailto:charlesriccardi@gmail.com"}
 ]
 	}
 }

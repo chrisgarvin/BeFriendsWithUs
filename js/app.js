@@ -1,22 +1,23 @@
 $(document).ready(function() {
 
-$.getJSON("data/data.json", function(data) {
+//Upon mouseover of picture, display info of charles/chris
 
-  $('.charles img').mouseenter(function(){
-    $('.charles span')[0].innerHTML = "<div><h3>" + data.response.info[1].name + "</h3><br>" + data.response.info[1].job + "<br>" + data.response.info[1].twitter + "</div>";
-  })
+  $.getJSON("data/data.json", function(data) {
 
-  $('.charles img').mouseleave(function(){
-    $('.charles span')[0].innerHTML = "";
-  })
+    $('.charles img').mouseenter(function() {
+      $('.charles span')[0].innerHTML = "<div><br><h3>" + data.response.info[1].name + "</h3><br><a href='" + data.response.info[1].email + "'><img src='img/build/email.png'></a><a href='" + data.response.info[1].instagram + "'><img src='img/build/instagram.png'></a><a href='" + data.response.info[1].twitter + "'><img src='img/build/twitter.png'></a></div>";
+    })
 
-  $('.chris img').mouseenter(function(){
-    $('.chris span')[0].innerHTML = "<div><h3>" + data.response.info[0].name + "</h3><br>" + data.response.info[0].job + "<br>" + data.response.info[0].twitter + "</div>";
-  })
+    $('.charles').mouseleave(function() {
+      $('.charles span')[0].innerHTML = "";
+    })
 
-  $('.chris img').mouseleave(function(){
-    $('.chris span')[0].innerHTML = "";
-  })
+    $('.chris img').mouseenter(function() {
+      $('.chris span')[0].innerHTML = "<div><br><h3>" + data.response.info[0].name + "</h3><br><a href='" + data.response.info[0].email + "'><img src='img/build/email.png'></a><a href='" + data.response.info[0].instagram + "'><img src='img/build/instagram.png'></a><a href='" + data.response.info[0].twitter + "'><img src='img/build/twitter.png'></a></div>";
+    })
+    $('.chris').mouseleave(function() {
+      $('.chris span')[0].innerHTML = "";
+    })
 
   });
 

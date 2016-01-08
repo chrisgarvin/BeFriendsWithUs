@@ -34,10 +34,11 @@ html {
   align-items: center;
 }
 .content {
-  width: 60%;
+  width: 75%;
   text-align: center;
   margin: 0 auto;
-  height: 500px;
+  min-height: 450px;
+  height: 75%;
   border: solid #01a5ff 10px;
   display: -webkit-flex;
   -webkit-flex-direction: row;
@@ -52,14 +53,26 @@ html {
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
+  background-color: rgb(242,242,242);
 }
 
 .charles, .chris {
   width: 50%;
 }
+.charles span img, .chris span img {
+  width: 50px;
+  padding: 10px;
+  display: inline;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+.charles span img:hover, .chris span img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
 
 .chris img, .charles img {
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
